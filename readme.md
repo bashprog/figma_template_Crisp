@@ -1,0 +1,1 @@
+template URL: https://www.figma.com/file/deBLzy1uj3rfFf1nirXDn1/Crisp-Ecommerce-Theme-(Community)?type=design&node-id=0-1&mode=design&t=DD9zEJvoTWhsYAbC-0
