@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 
 import s from './Header.module.scss';
@@ -8,7 +9,9 @@ import { oswald, roboto } from "@/app/fonts";
 import Search from "./Search";
 
 import {AiOutlineHeart} from 'react-icons/ai';
-import {HiOutlineShoppingBag} from 'react-icons/hi2'
+import {HiOutlineShoppingBag} from 'react-icons/hi2';
+
+import { usePathname } from 'next/navigation';
 
 const MockedList = [
     {title: 'Home', href: '/'},
@@ -19,6 +22,8 @@ const MockedList = [
 ]
 
 const Header: React.FC = () => {
+    const pathName = usePathname();
+
     return (
         <>
             <header className={`${s.header} ${oswald.className}`}>
@@ -26,7 +31,7 @@ const Header: React.FC = () => {
                 <nav className={s.navigation}>
                     <ul className={s.navList}>
                         {MockedList.map((el, key) => (
-                            <li key={key}>
+                            <li key={key} className={pathName == el.href ? s.active : ''}>
                                 <Link href={el.href}>
                                     {el.title}
                                 </Link>
