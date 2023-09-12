@@ -1,0 +1,35 @@
+.searchBox {
+    display: flex;
+    position: relative;
+    align-items: center;
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        transition: $tt;
+        &.hidden {
+            opacity: 0;
+        }
+    }
+}
+
+.searchInput {
+    background: none;
+    padding: 4px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: $tt;
+    color: white;
+    font-size: 14px;
+    width: 90px;
+    position: relative;
+    z-index: 10005;
+    &:focus {
+        outline: none;
+        border-bottom: 2px solid white;
+        +span {
+            opacity: 0;
+        }
+    }
+}
