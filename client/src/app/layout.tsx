@@ -3,6 +3,7 @@ import './globals.scss'
 import type { Metadata } from 'next'
 
 import { roboto } from './fonts'
+import Footer from '@/components/layout/footer/Footer'
 
 export const metadata: Metadata = {
   title: 'Crisp',
@@ -14,7 +15,8 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
     <html lang="en">
       <body className={roboto.className}>
         <Header/>
-        {children}
+          {children}
+        <Footer/>
       </body>
     </html>
   )
