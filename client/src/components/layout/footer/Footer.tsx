@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 
 import s from './Footer.module.scss';
 
@@ -8,6 +9,8 @@ import Link from 'next/link';
 import { oswald } from '@/app/fonts';
 
 import {BiLogoFacebook, BiLogoTwitter, BiLogoInstagram} from 'react-icons/bi'
+import Input from '@/components/Input/Input';
+import Button from '@/components/button/Button';
 
 const mockedFeatures = [
     {title: 'men', href: '/shop'},
@@ -31,6 +34,8 @@ const mockedMenu = [
 ]
 
 const Footer: React.FC = () => {
+    const [email, changeEmail] = useState('');
+
     return(
         <footer className={s.footer}>
             <div className="container">
@@ -111,6 +116,9 @@ const Footer: React.FC = () => {
                 </div>
                 <div className={s.join}>
                     <h3 className={oswald.className}>Join us</h3>
+                    <p>Subscribe to our newsletters</p>
+                    <Input value={email} handler={(e) => changeEmail(e.target.value)} placeholder='Email Address'/>
+                    <Button title='Subscribe!' style='white' disabled={email ? false : true} />
                 </div>
             </div>
         </footer>

@@ -1,0 +1,36 @@
+.inputBox {
+    position: relative;
+    width: 280px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    span {
+        position: absolute;
+        color: white;
+        left: 15px;
+        pointer-events: none;
+        font-size: 12px;
+        transition: $tt;
+        opacity: 1;
+        &.hidden {
+            opacity: 0;
+        }
+    }
+}
+
+.input {
+    width: 280px;
+    height: 40px;
+    border: 1px solid white;
+    background: $black;
+    color: white;
+    padding: 15px;
+    outline: none;
+    &:focus {
+        outline: none;
+        +span {
+            opacity: 0;
+        }
+    }
+}

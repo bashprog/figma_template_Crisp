@@ -1,0 +1,40 @@
+.button {
+    width: 280px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: $tt;
+    user-select: none;
+    &:not(.disabled):active {
+        transform: scale(.9);
+    }
+}
+
+.black {
+    border: 2px solid $black;
+    background: $black;
+    color: white;
+    margin: 10px 0;
+    &.transparent {
+        background: transparent;
+        color: black;
+    }
+}
+
+.white {
+    border: 2px solid white;
+    background: white;
+    color: black;
+    &.transparent {
+        background: transparent;
+        color: white;
+    }
+}
+
+.disabled {
+    color: $gray !important;
+}
