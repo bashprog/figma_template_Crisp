@@ -3,9 +3,10 @@
     height: 530px;
     background: $black;
     padding-top: 65px;
-    border-top: 5px solid red;
+    // border-top: 5px solid red;
     color: white;
-    >div {
+    position: relative;
+    >div:first-child {
         display: flex;
         height: 100%;
         justify-content: space-between;
@@ -51,4 +52,23 @@
         text-transform: uppercase;
         color: $gray;
         margin-top: 30px;
+}
+
+.copyright {
+    border-top: 1px solid $gray;
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    padding: 15px 0;
+    width: 1860px;
+    margin: 0 20px;
+    color: white;
+    text-transform: uppercase;
+    a {
+        text-decoration: underline;
+        transition: $tt;
+        &:hover {
+            color: $brandColor;
+        }
+    }
 }

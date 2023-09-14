@@ -121,6 +121,9 @@ const Footer: React.FC = () => {
                     <Button title='Subscribe!' style='white' disabled={email ? false : true} />
                 </div>
             </div>
+            <div className={`${s.copyright}`}>
+                <p>&copy; 2023. Crisp <Link target='_blank' href={'https://www.figma.com/file/deBLzy1uj3rfFf1nirXDn1/Crisp-Ecommerce-Theme-(Community)?node-id=69%3A3257&mode=dev'}>theme</Link> developed by belvg.  <Link target='_blank' href={'https://github.com/bashprog/figma_template_Crisp'}>Code</Link> by Onton.</p>
+            </div>
         </footer>
     )
 };

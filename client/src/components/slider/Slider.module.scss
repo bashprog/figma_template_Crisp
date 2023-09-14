@@ -1,0 +1,15 @@
+.sliderBox {
+    margin: 20px 0;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background: $gray;
+    overflow: hidden;
+}
+
+.sliderContent {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    transform: translateX(100px);
+}
