@@ -11,4 +11,53 @@
     height: 100%;
     position: absolute;
     display: flex;
+    transition: $ttLong;
+}
+
+.buttonsGroup {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    width: 106px;
+    justify-content: space-between;
+    >div {
+        width: 50px;
+        height: 50px;
+        background: $black;
+        border: 1px solid $black;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+        span {
+            position: absolute;
+        }
+    }
+}
+
+.dots {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    display: flex;
+    span {
+        width: 25px;
+        height: 25px;
+        border: 1px solid $black;
+        display: block;
+        margin: 3px;
+        cursor: pointer;
+        transition: $tt;
+        &:hover {
+            background: $black;
+            transform: scale(1.15);
+        }
+        &.active {
+            background: $black;
+            transform: scale(1.15);
+        }
+    }
 }
