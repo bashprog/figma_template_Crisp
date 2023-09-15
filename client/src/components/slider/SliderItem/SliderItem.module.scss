@@ -1,0 +1,60 @@
+.textBox {
+    width: 504px;
+    height: 290px;
+    font-size: 86px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 96px;
+    position: relative;
+    margin-left: 235px;
+    margin-top: 205px;
+    span {
+        -webkit-text-stroke: 2px $black;
+        color: transparent;
+    }
+    &::before {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: -20px;
+        left: 50px;
+        background: $black;
+    }
+    &::after {
+        display: block;
+        content: '';
+        width: 2px;
+        height: 30%;
+        position: absolute;
+        top: -20px;
+        right:-50px;
+        background: $black;
+    }
+}
+
+.btnContainer {
+    margin-left: 235px;
+    margin-top: 50px;
+}
+
+.imgBox {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 180px;
+    top: 0;
+    width: 815px;
+    height: 100%;
+    img {
+        position: absolute;
+        &:first-child {
+            left: 0;
+            align-content: center;
+        }
+        &:last-child {
+            right: 0;
+        }
+    }
+}

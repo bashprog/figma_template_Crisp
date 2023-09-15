@@ -21,7 +21,11 @@
     margin: 10px 0;
     &.transparent {
         background: transparent;
-        color: black;
+        color: $black;
+        &:hover {
+            background: $black;
+            color: white;
+        }
     }
 }
 
