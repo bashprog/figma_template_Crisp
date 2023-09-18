@@ -1,0 +1,37 @@
+.box {
+    width: 100%;
+    height: 198px;
+    border: 1px solid $black;
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    display: inline-block;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    font-size: 24px;
+    position: absolute;
+    margin: 0 auto;
+    top: -30px;
+    left: calc(50% - 157px);
+    background: white;
+    font-weight: 400;
+}
+
+.imageContainer {
+    width: 200px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $tt;
+    cursor: pointer;
+    &:hover {
+        background: $grayLight;
+    }
+}

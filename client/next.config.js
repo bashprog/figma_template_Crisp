@@ -6,6 +6,9 @@ const nextConfig = {
         includePaths: [path.join(__dirname, 'styles')],
         prependData: `@import "@/app/variable.scss";`,
     },
+    images: {
+        domains: ['localhost']
+    }
 }
 
 module.exports = nextConfig
