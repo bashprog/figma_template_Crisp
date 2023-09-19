@@ -1,0 +1,25 @@
+.productBox {
+    width: 345px;
+    height: 550px;
+    overflow: hidden;
+}
+
+.sliderContainer {
+    width: 345px;
+    height: 450px;
+    display: flex;
+    transition: $tt;
+}
+
+.textInfo {
+    margin-top: 8px;
+    span {
+        color: $devider;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 18px;
+    }
+}

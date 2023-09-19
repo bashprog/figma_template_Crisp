@@ -29,7 +29,7 @@ const CTA: React.FC<CTAInterface> = ({header, text, href, background, textPositi
     };
 
     return(
-        <div className={fullWidth ? 'containerFluid' : 'container'}>
+        <div className={fullWidth ? 'containerFluid m20' : 'container m20'}>
             <div className={s.contentBox} style={{background: background}}>
                 <div className={s.textBlock} style={textStyles}>
                         <h4 className={oswald.className}>{header}</h4>
